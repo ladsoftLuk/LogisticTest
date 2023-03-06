@@ -16,7 +16,7 @@ Allowed types:
 - OSOBOWE
 - DOSTAWCZE
 
-3)Assign driver: http://localhost:8080/api/vehicles/assign
+3) Assign driver: http://localhost:8080/api/vehicles/assign
 Remember to add some vehicles first
 Body json example:
 {
@@ -25,14 +25,15 @@ Body json example:
 }
 
 Preloaded drivers:
-id  name    surname
-1	  Adam	  Adamski
-2	  Bob	    Bobowski
-3	  Cesar	  Cesarski
-4	  Derek	  Derecki
-5	  Evan	  Evanski
 
-4)Unassign driver: http://localhost:8080/api/vehicles/unassign
+<table><tr><th colspan="3">SELECT id, name, surname<br>FROM logistic.driver</th></tr><tr><th>id</th><th>name</th><th>surname</th></tr><tr class="odd"><td>1</td><td>Adam</td><td>Adamski</td></tr>
+<tr><td>2</td><td>Bob</td><td>Bobowski</td></tr>
+<tr class="odd"><td>3</td><td>Cesar</td><td>Cesarski</td></tr>
+<tr><td>4</td><td>Derek</td><td>Derecki</td></tr>
+<tr class="odd"><td>5</td><td>Evan</td><td>Evanski</td></tr>
+</table>
+
+4) Unassign driver: http://localhost:8080/api/vehicles/unassign
 Remember to add some vehicles first
 Body json example:
 {
